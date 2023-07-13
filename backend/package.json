@@ -1,7 +1,7 @@
 {
-  "name": "backend",
+  "name": "teosd-gui-backend",
   "version": "0.0.1",
-  "description": "",
+  "description": "This backend is a NestJS application that interacts with the Teos CLI to extract and serve data through various API endpoints.",
   "author": "",
   "private": true,
   "license": "UNLICENSED",
