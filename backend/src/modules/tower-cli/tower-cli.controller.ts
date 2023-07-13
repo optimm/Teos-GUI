@@ -18,7 +18,7 @@ export class TowerCliController {
     return this.towerCliService.getAllUsers();
   }
 
-  @Get('users/:userPublicKey')
+  @Get('get-user/:userPublicKey')
   getUser(
     @Param('userPublicKey') userPublicKey: string,
   ): Promise<GetUserInfoResDto> {
