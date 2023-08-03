@@ -14,10 +14,6 @@ html {
   margin: 0px;
   padding: 0px;
 }
-
-:root {
-  /* text */
-  --text-black: #000000;
-  --text-secondary: #4f4f4f;
-  --text-tertiary: #828282;
+body {
+  background-color: #f6f6f6;
 }

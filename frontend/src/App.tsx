@@ -1,8 +1,12 @@
+import { ThemeProvider } from '@mui/material';
 import Routes from './routes';
+import { theme } from 'theme/theme';
 function App() {
   return (
     <>
-      <Routes />
+      <ThemeProvider theme={theme}>
+        <Routes />
+      </ThemeProvider>
     </>
   );
 }
