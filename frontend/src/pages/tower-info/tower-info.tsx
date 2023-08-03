@@ -1,5 +1,5 @@
 const TowerInfo = () => {
-  return <div>TowerInfo</div>;
+  return <div>Tower Info</div>;
 };
 
 export default TowerInfo;
