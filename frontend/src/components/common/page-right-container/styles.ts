@@ -4,7 +4,7 @@ export const Container = styled('div')({
   flex: '1',
   height: '100vh',
   overflowY: 'hidden',
-  padding: '50px 8%'
+  padding: '50px 6%'
 });
 
 export const PageTitle = styled('div')({
@@ -21,6 +21,7 @@ export const PageCard = styled('div')(({ theme }) => ({
   minHeight: '60vh',
   maxHeight: 'calc(100vh - 200px)',
   overflowY: 'auto',
+  overflowX: 'hidden',
   filter: 'drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25))',
   borderRadius: '10px'
 }));
