@@ -9,5 +9,6 @@ export const ColorPalette: Partial<Palette> = {
     primary: '#000000',
     secondary: '#999999',
     disabled: '#BCBCBC'
-  }
+  },
+  divider: '#EAEAEA'
 };

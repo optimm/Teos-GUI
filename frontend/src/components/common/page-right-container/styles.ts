@@ -23,5 +23,7 @@ export const PageCard = styled('div')(({ theme }) => ({
   overflowY: 'auto',
   overflowX: 'hidden',
   filter: 'drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25))',
-  borderRadius: '10px'
+  borderRadius: '10px',
+  display: 'flex',
+  flexDirection: 'column'
 }));

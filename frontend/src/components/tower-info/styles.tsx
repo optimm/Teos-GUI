@@ -26,4 +26,6 @@ export const ItemSingle = styled('div')({
   }
 });
 
-export const AddressContainer = styled('div')({});
+export const AddressTable = styled('div')({
+  marginTop: '50px'
+});
