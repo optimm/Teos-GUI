@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 
 export const HomeComponentContainer = styled('div')(({ theme }) => ({
   width: '80%',
-  flex: '1',
   margin: 'auto',
   display: 'flex',
   flexDirection: 'column',
@@ -12,8 +11,7 @@ export const HomeComponentContainer = styled('div')(({ theme }) => ({
 
   ['& .home-page-title']: {
     fontSize: '40px',
-    fontWeight: '700',
-    marginTop: '10vh'
+    fontWeight: '700'
   },
   ['& .home-page-text']: {
     fontSize: '18px',
