@@ -13,7 +13,7 @@ export const LogoContainer = styled('div')(() => ({
   alignItems: 'flex-end',
   // image of the logo
   ['& .logo-image']: {
-    height: '45px',
+    height: '55px',
     width: 'auto'
   },
   // text of the logo
@@ -43,7 +43,7 @@ export const MainMenuContainer = styled('div')(({ theme }) => ({
 
 export const MenuItem = styled('div')(({ theme }) => ({
   width: '100%',
-  padding: '15px 10px',
+  padding: '15px 20px',
   marginTop: '15px',
   display: 'flex',
   alignItems: 'center',

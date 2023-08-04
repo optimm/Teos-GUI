@@ -1,4 +1,4 @@
-const AllAppointments = () => {
+const AllAppointments: React.FC = () => {
   return <div>All Appointments</div>;
 };
 

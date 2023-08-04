@@ -9,13 +9,12 @@ export class SideBarUtils {
   };
 
   public static getActiveTabFromUrl(url: string): number {
-    // Map the URL path to the corresponding tab name
     return SideBarUtils.menuItemMap[url] || 0;
   }
+
   public static getUrlFromActiveTab(activeTab: number): string {
-    // Find the URL corresponding to the active tab index
     const url =
-      Object.entries(SideBarUtils.menuItemMap).find(([path, index]) => index === activeTab)?.[0] ||
+      Object.entries(SideBarUtils.menuItemMap).find(([_path, index]) => index === activeTab)?.[0] ||
       '/';
     return url;
   }

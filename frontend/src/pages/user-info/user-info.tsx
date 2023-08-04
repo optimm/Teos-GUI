@@ -1,4 +1,4 @@
-const UserInfo = () => {
+const UserInfo:React.FC = () => {
   return <div>User Info</div>;
 };
 

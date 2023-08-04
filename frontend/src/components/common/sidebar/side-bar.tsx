@@ -4,7 +4,7 @@ import MainLogo from '@assets/logos/main-logo.png';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { SideBarUtils } from './utils/side-bar-utils';
 
-const SideBar = () => {
+const SideBar: React.FC = () => {
   const [activeItem, setActiveItem] = useState(0);
   const location = useLocation();
   const navigate = useNavigate();
