@@ -13,7 +13,7 @@ const CopyTextComponent: React.FC<CopyTextComponentProps> = ({ text = '' }) => {
     enqueueSnackbar('Copied to clipboard', { variant: 'info' });
   };
   return (
-    <CopyTextContainer onClick={handleCopy}>
+    <CopyTextContainer onClick={handleCopy} title='copy to clipboard'>
       <img alt='copy icon' src={Icons.CopyIcon} className='copy-icon' />
     </CopyTextContainer>
   );

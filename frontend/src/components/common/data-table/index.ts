@@ -40,7 +40,7 @@ export const DataTableData = styled('div')<DataTableProps>(({ columns, theme }) 
     },
 
     ['& .data-table-serial-no']: {
-      width: '100px'
+      width: '90px'
     },
 
     ['& .data-table-column-head']: {
