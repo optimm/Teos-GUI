@@ -11,3 +11,4 @@ export { default as AllAppointmentsComponent } from './all-appointments/all-appo
 export * from './common/data-table';
 export * from './common/button';
 export * from './common/input';
+export * from './common/modal';
