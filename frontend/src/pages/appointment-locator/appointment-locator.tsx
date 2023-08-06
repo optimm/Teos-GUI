@@ -1,5 +1,12 @@
-const AppointmentsWithLocator :React.FC= () => {
-  return <div>Appointments With Locator</div>;
+import { AppointmentLocatorComponent, PageRightContainer } from '@components/index';
+
+const AppointmentsWithLocatorPage: React.FC = () => {
+  return (
+    <PageRightContainer
+      title={'Appointments with Locator'}
+      child={<AppointmentLocatorComponent />}
+    />
+  );
 };
 
-export default AppointmentsWithLocator;
+export default AppointmentsWithLocatorPage;

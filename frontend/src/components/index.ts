@@ -8,6 +8,8 @@ export { default as CardError } from './common/card-error/card-error';
 export { default as AllUsersComponent } from './all-users/all-users';
 export { default as UserInfoComponent } from './user-info/user-info';
 export { default as AllAppointmentsComponent } from './all-appointments/all-appointments';
+export { default as AppointmentLocatorComponent } from './appointment-locator/appointment-locator';
+export { default as AppointmentTable } from './common/appointment-data-table/appointment-data-table';
 export * from './common/data-table';
 export * from './common/button';
 export * from './common/input';

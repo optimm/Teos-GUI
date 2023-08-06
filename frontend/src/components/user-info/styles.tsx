@@ -11,7 +11,7 @@ export const SearchSection = styled('div')({
   display: 'flex',
   justifyContent: 'space-between',
   ['& .search-input']: {
-    width: '75%'
+    width: '70%'
   }
 });
 

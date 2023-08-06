@@ -23,6 +23,9 @@ const UserInfoComponent: React.FC = () => {
 
   const handleGetUserInfo = async () => {
     setLoading(true);
+    setError(null);
+    setUserData(null);
+
     try {
       const { data } = await ApiService.getUserInfo(userId!);
       setUserData(data.userData);

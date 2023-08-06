@@ -22,4 +22,8 @@ export class ApiService {
   public static async getAllAppointments() {
     return httpClient.get<GetAppointmentsResDto>(`/cli/appointments`);
   }
+
+  public static async getAppointmentsLocator(locator: string) {
+    return httpClient.get<GetAppointmentsResDto>(`/cli/appointments/${locator}`);
+  }
 }

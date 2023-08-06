@@ -3,6 +3,7 @@ import { RoutesContainer } from './styles';
 import {
   AllAppointmentsPage,
   AllUsersPage,
+  AppointmentsWithLocatorPage,
   HomePage,
   TowerInfoPage,
   UserInfoPage
@@ -21,6 +22,7 @@ const AllRoutes = () => {
             <Route path='all-users' element={<AllUsersPage />} />
             <Route path='user-info' element={<UserInfoPage />} />
             <Route path='all-appointments' element={<AllAppointmentsPage />} />
+            <Route path='appointments-with-locator' element={<AppointmentsWithLocatorPage />} />
           </Routes>
         </RoutesContainer>
       </BrowserRouter>
