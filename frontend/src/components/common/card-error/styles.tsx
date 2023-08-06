@@ -10,10 +10,10 @@ export const CardErrorContainer = styled('div')({
   gap: '30px',
 
   ['& .card-error-icon']: {
-    height: '80px'
+    height: '70px'
   },
   ['& .card-error-text']: {
     color: 'red',
-    fontSize: '20px'
+    fontSize: '18px'
   }
 });

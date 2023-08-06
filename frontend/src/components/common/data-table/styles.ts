@@ -34,7 +34,13 @@ export const DataTableData = styled('div')<DataTableProps>(({ columns, theme }) 
     },
 
     ['& .data-table-column']: {
-      width: `${columnWidth}`
+      width: `${columnWidth}`,
+      display: 'flex',
+      justifyContent: 'space-between'
+    },
+
+    ['& .data-table-serial-no']: {
+      width: '100px'
     },
 
     ['& .data-table-column-head']: {
