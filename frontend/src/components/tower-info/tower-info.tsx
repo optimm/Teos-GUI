@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
 import { AddressTable, ItemSingle, TowerInfoContainer } from './styles';
-import { CopyTextComponent, PageCardLoader } from '..';
-import { DataTable, DataTableData } from '@components/common/data-table/styles';
+import { CardError, CopyTextComponent, DataTable, DataTableData, PageCardLoader } from '..';
 import { TowerInfoDto } from '@common/dto';
 import { ApiService } from '@common/service/api.service';
+import { ApiUtil } from '@common/utils';
 
 const TowerInfoComponent: React.FC = () => {
   const [towerInfo, setTowerInfo] = useState<TowerInfoDto | null>(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<String | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     async function getInfo() {
@@ -16,6 +16,8 @@ const TowerInfoComponent: React.FC = () => {
         const { data } = await ApiService.getTowerInfo();
         setTowerInfo(data.towerInfo);
       } catch (error) {
+        const errorMessage = ApiUtil.getErrorMsg(error);
+        setError(errorMessage);
       } finally {
         setTimeout(() => {
           setLoading(false);
@@ -32,7 +34,7 @@ const TowerInfoComponent: React.FC = () => {
       ) : (
         <>
           {error ? (
-            <></>
+            <CardError error={error} />
           ) : (
             <>
               <TowerInfoContainer>
