@@ -23,9 +23,9 @@ export const NoSearchState = styled('div')({
 });
 export const UserDataContainer = styled('div')({
   ['& .user-data']: {
-    marginTop: '50px'
+    marginTop: '70px'
   },
   ['& .appointment-table']: {
-    marginTop: '50px'
+    marginTop: '70px'
   }
 });

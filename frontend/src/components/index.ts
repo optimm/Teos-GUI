@@ -7,6 +7,7 @@ export { default as PageCardLoader } from './common/page-card-loader/page-card-l
 export { default as CardError } from './common/card-error/card-error';
 export { default as AllUsersComponent } from './all-users/all-users';
 export { default as UserInfoComponent } from './user-info/user-info';
+export { default as AllAppointmentsComponent } from './all-appointments/all-appointments';
 export * from './common/data-table';
 export * from './common/button';
 export * from './common/input';
