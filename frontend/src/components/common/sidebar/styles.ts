@@ -3,11 +3,12 @@ import styled from '@emotion/styled';
 export const SideBarContainer = styled('div')(({ theme }) => ({
   background: theme.palette.background.paper,
   height: '100%',
-  borderRight: '2px solid #DFDFDF',
+  borderRight: '2px solid',
+  borderColor: theme.palette.divider,
   padding: '50px 30px'
 }));
 
-export const LogoContainer = styled('div')(() => ({
+export const LogoContainer = styled('div')(({ theme }) => ({
   display: 'flex',
   gap: '15px',
   alignItems: 'flex-end',
@@ -19,7 +20,8 @@ export const LogoContainer = styled('div')(() => ({
   // text of the logo
   ['& .logo-text']: {
     fontSize: '22px',
-    fontWeight: '700'
+    fontWeight: '700',
+    color: theme.palette.text.primary
   }
 }));
 

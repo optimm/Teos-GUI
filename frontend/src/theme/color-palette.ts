@@ -10,18 +10,20 @@ export const ColorPalette: Partial<Palette> = {
     secondary: '#999999',
     disabled: '#BCBCBC'
   },
+  error: { light: '', main: '#FF0000', dark: '', contrastText: '' },
   divider: '#EAEAEA'
 };
 
 export const DarkModePalette = {
   background: {
-    default: '#000000',
-    paper: 'rgb(255, 255, 255, 0.1)'
+    default: '#222222',
+    paper: '#333333'
   },
   text: {
     primary: '#FFFFFF',
-    secondary: '#CCCCCC',
-    disabled: '#666666'
+    secondary: '#999999',
+    disabled: '#777777'
   },
-  divider: '#333333'
+  divider: '#555555',
+  error: { light: '', main: '#ff3d3d', dark: '', contrastText: '' }
 };

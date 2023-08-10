@@ -107,7 +107,7 @@ const UserInfoComponent: React.FC = () => {
                 </UserDataContainer>
               ) : (
                 <NoSearchState>
-                  <img src={Icons.PersonIcon} alt='user icon' />
+                  <img src={Icons.PersonIcon} alt='user icon' className='no-search-icon' />
                 </NoSearchState>
               )}
             </>

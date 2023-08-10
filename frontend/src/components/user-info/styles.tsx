@@ -19,7 +19,11 @@ export const NoSearchState = styled('div')({
   flex: '1',
   display: 'flex',
   justifyContent: 'center',
-  alignItems: 'center'
+  alignItems: 'center',
+  ['& .no-search-icon']: {
+    marginTop: '50px',
+    height: '110px'
+  }
 });
 export const UserDataContainer = styled('div')({
   ['& .user-data']: {

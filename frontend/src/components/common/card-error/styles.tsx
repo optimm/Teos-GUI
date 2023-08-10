@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const CardErrorContainer = styled('div')({
+export const CardErrorContainer = styled('div')(({ theme }) => ({
   width: '100%',
   flex: '1',
   display: 'flex',
@@ -13,7 +13,7 @@ export const CardErrorContainer = styled('div')({
     height: '70px'
   },
   ['& .card-error-text']: {
-    color: 'red',
+    color: theme.palette.error.main,
     fontSize: '18px'
   }
-});
+}));

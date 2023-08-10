@@ -66,7 +66,7 @@ const AppointmentLocatorComponent = () => {
                 </div>
               ) : (
                 <NoSearchState>
-                  <img src={Icons.AppointmentIcon} alt='user icon' />
+                  <img src={Icons.AppointmentIcon} alt='user icon' className='no-search-icon' />
                 </NoSearchState>
               )}
             </>

@@ -4,9 +4,10 @@ export const AllAppointmentsContainer = styled('div')({
   width: '100%'
 });
 
-export const AppointmentModal = styled('div')({
+export const AppointmentModal = styled('div')(({ theme }) => ({
   width: '600px',
   padding: '20px',
+  background: theme.palette.background.paper,
 
   ['& .modal-title']: {
     fontSize: '22px',
@@ -15,7 +16,7 @@ export const AppointmentModal = styled('div')({
   ['& .modal-content']: {
     marginTop: '30px'
   }
-});
+}));
 
 export const DataSingle = styled('div')({
   width: '100%',

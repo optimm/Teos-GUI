@@ -15,11 +15,12 @@ export const PageTitleContainer = styled('div')({
   alignItems: 'flex-end'
 });
 
-export const PageTitle = styled('div')({
+export const PageTitle = styled('div')(({ theme }) => ({
   fontSize: '26px',
   marginTop: '25px',
-  fontWeight: '700'
-});
+  fontWeight: '700',
+  color: theme.palette.text.primary
+}));
 
 export const PageCard = styled('div')(({ theme }) => ({
   background: theme.palette.background.paper,
@@ -33,5 +34,6 @@ export const PageCard = styled('div')(({ theme }) => ({
   filter: 'drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25))',
   borderRadius: '10px',
   display: 'flex',
-  flexDirection: 'column'
+  flexDirection: 'column',
+  color: theme.palette.text.primary
 }));
