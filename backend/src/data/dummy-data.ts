@@ -19,6 +19,9 @@ export const towerDummyData: TowerInfoDto = {
 export const dummyUserPublicKey =
   '038342ef6a581129a7e2d185e6f0ee1ce4ae94034b0c91f5a5db9ae6cc3ba80a4c';
 
+export const dummyNotFoundUserKey =
+  '038342ef6a581129a7e2d185e6f0ee1ce4ae94034b0c91f5a5db9ae6cc3ba80a4a';
+
 export const allUsersDummyData: string[] = [dummyUserPublicKey];
 export const dummyAppointmentLocator = 'f17b80e532b815a914ba437d3f88fef5';
 

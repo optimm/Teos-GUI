@@ -5,8 +5,8 @@ import {
   HttpException,
 } from '@nestjs/common';
 import { BaseExceptionFilter } from '@nestjs/core';
-import { TeosCliErrorException } from 'src/modules/run-command/error/cli-exception';
-import { TeosCliError } from 'src/modules/run-command/error/cli.error';
+import { TeosCliErrorException } from '../../modules/run-command/error/cli-exception';
+import { TeosCliError } from '../../modules/run-command/error/cli.error';
 
 @Catch()
 export class GlobalExceptionsFilter extends BaseExceptionFilter {
