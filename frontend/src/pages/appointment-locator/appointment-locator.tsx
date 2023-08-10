@@ -2,10 +2,7 @@ import { AppointmentLocatorComponent, PageRightContainer } from '@components/ind
 
 const AppointmentsWithLocatorPage: React.FC = () => {
   return (
-    <PageRightContainer
-      title={'Appointments with Locator'}
-      child={<AppointmentLocatorComponent />}
-    />
+    <PageRightContainer title={'Appointment Information'} child={<AppointmentLocatorComponent />} />
   );
 };
 
