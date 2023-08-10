@@ -1,4 +1,4 @@
-class TowerAddressDto {
+export class TowerAddressDto {
   type: string;
   address: string;
   port: number;
