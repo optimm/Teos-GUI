@@ -41,31 +41,31 @@ const SideBar: React.FC = () => {
             className={activeItem === 1 ? 'active-item' : ''}
             onClick={() => handleSideBarClick(1)}
           >
-            <div className='menu-item-text'>TowerInfo</div>
+            <div className='menu-item-text'>Tower information</div>
           </MenuItem>
           <MenuItem
             className={activeItem === 2 ? 'active-item' : ''}
             onClick={() => handleSideBarClick(2)}
           >
-            <div className='menu-item-text'>All Users</div>
+            <div className='menu-item-text'>List users</div>
           </MenuItem>
           <MenuItem
             className={activeItem === 3 ? 'active-item' : ''}
             onClick={() => handleSideBarClick(3)}
           >
-            <div className='menu-item-text'>User Info</div>
+            <div className='menu-item-text'>User information</div>
           </MenuItem>
           <MenuItem
             className={activeItem === 4 ? 'active-item' : ''}
             onClick={() => handleSideBarClick(4)}
           >
-            <div className='menu-item-text'>All Appointments</div>
+            <div className='menu-item-text'>List appointments</div>
           </MenuItem>
           <MenuItem
             className={activeItem === 5 ? 'active-item' : ''}
             onClick={() => handleSideBarClick(5)}
           >
-            <div className='menu-item-text'>Appointments with Locator</div>
+            <div className='menu-item-text'>Appointments information</div>
           </MenuItem>
         </div>
       </MainMenuContainer>
