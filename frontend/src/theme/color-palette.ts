@@ -12,3 +12,16 @@ export const ColorPalette: Partial<Palette> = {
   },
   divider: '#EAEAEA'
 };
+
+export const DarkModePalette = {
+  background: {
+    default: '#000000',
+    paper: 'rgb(255, 255, 255, 0.1)'
+  },
+  text: {
+    primary: '#FFFFFF',
+    secondary: '#CCCCCC',
+    disabled: '#666666'
+  },
+  divider: '#333333'
+};

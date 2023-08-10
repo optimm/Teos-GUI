@@ -14,3 +14,4 @@ export * from './common/data-table';
 export * from './common/button';
 export * from './common/input';
 export * from './common/modal';
+export * from './common/switch';

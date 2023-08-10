@@ -1,8 +1,11 @@
 import { ThemeProvider } from '@mui/material';
 import Routes from './routes';
-import { theme } from 'theme/theme';
+
 import { SnackbarProvider } from 'notistack';
+import { generateTheme } from 'theme/theme';
 function App() {
+  const theme = generateTheme();
+
   return (
     <>
       <ThemeProvider theme={theme}>

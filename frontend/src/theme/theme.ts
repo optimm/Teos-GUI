@@ -1,8 +1,13 @@
 import { createTheme } from '@mui/material/styles';
-import { ColorPalette } from './color-palette';
+import { ColorPalette, DarkModePalette } from './color-palette';
+import useAppStore from 'service/app.slice';
 
-const theme = createTheme({
-  palette: ColorPalette
-});
+export const generateTheme = () => {
+  const { darkMode } = useAppStore();
 
-export { theme };
+  const theme = createTheme({
+    palette: darkMode ? DarkModePalette : ColorPalette
+  });
+
+  return theme;
+};

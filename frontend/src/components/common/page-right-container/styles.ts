@@ -1,10 +1,18 @@
 import styled from '@emotion/styled';
 
-export const Container = styled('div')({
+export const Container = styled('div')(({ theme }) => ({
   flex: '1',
   height: '100vh',
   overflowY: 'hidden',
-  padding: '50px 6%'
+  padding: '50px 6%',
+  background: theme.palette.background.default
+}));
+
+export const PageTitleContainer = styled('div')({
+  display: 'flex',
+  width: '100%',
+  justifyContent: 'space-between',
+  alignItems: 'flex-end'
 });
 
 export const PageTitle = styled('div')({
