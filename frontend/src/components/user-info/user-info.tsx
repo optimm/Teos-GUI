@@ -46,7 +46,7 @@ const UserInfoComponent: React.FC = () => {
           <StyledTextInput
             variant='filled'
             fullWidth
-            placeholder='Enter User Id'
+            placeholder='Enter the user ID'
             value={userId}
             onChange={(e) => setUserId(e.target.value)}
           />
@@ -71,13 +71,13 @@ const UserInfoComponent: React.FC = () => {
                 <UserDataContainer>
                   <div className='user-data'>
                     <ItemSingle>
-                      <div className='item-title'>Available Slots</div>
+                      <div className='item-title'>Available slots</div>
                       <div className='item-right'>
                         <div className='item-value'>{userData.available_slots}</div>
                       </div>
                     </ItemSingle>
                     <ItemSingle>
-                      <div className='item-title'>Subscription Expiry</div>
+                      <div className='item-title'>Subscription expiry</div>
                       <div className='item-right'>
                         <div className='item-value'>{userData.subscription_expiry}</div>
                       </div>
@@ -89,16 +89,12 @@ const UserInfoComponent: React.FC = () => {
                       <div className='data-table-divider' />
                       <DataTableData columns={1}>
                         <div className='data-table-row'>
-                          <div className='data-table-serial-no'>
-                            <div className='data-table-column-head'>Sr No.</div>
-                          </div>
                           <div className='data-table-column'>
-                            <div className='data-table-column-head'>Appointment Id</div>
+                            <div className='data-table-column-head'>Appointment ID</div>
                           </div>
                         </div>
                         {userData?.appointments?.map((item, index) => (
                           <div className='data-table-row' key={index}>
-                            <div className='data-table-serial-no'>{index + 1}</div>
                             <div className='data-table-column'>
                               <div className='data-table-text'>{item}</div>
                               <CopyTextComponent text={item} />

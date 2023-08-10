@@ -23,6 +23,9 @@ export const ItemSingle = styled('div')({
   ['& .item-value']: {
     width: '95%',
     wordBreak: 'break-word'
+  },
+  ['& .bitcoin-reachable-icon']: {
+    width: '18px'
   }
 });
 

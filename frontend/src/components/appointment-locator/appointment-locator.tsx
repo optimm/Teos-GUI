@@ -39,7 +39,7 @@ const AppointmentLocatorComponent = () => {
           <StyledTextInput
             variant='filled'
             fullWidth
-            placeholder='Enter Locator'
+            placeholder='Enter the locator'
             value={locator}
             onChange={(e) => setLocator(e.target.value)}
           />

@@ -65,7 +65,7 @@ const SideBar: React.FC = () => {
             className={activeItem === 5 ? 'active-item' : ''}
             onClick={() => handleSideBarClick(5)}
           >
-            <div className='menu-item-text'>Appointments information</div>
+            <div className='menu-item-text'>Appointment information</div>
           </MenuItem>
         </div>
       </MainMenuContainer>

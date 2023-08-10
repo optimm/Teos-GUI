@@ -31,9 +31,6 @@ const AppointmentTable: React.FC<AppointmentTable> = ({ appointments = [] }) => 
           <div className='data-table-divider' />
           <DataTableData columns={1}>
             <div className='data-table-row'>
-              <div className='data-table-serial-no'>
-                <div className='data-table-column-head'>Sr No.</div>
-              </div>
               <div className='data-table-column'>
                 <div className='data-table-column-head'>Locator</div>
               </div>
@@ -41,7 +38,6 @@ const AppointmentTable: React.FC<AppointmentTable> = ({ appointments = [] }) => 
             {appointments?.map((item, index) => (
               <>
                 <div className='data-table-row' key={index}>
-                  <div className='data-table-serial-no'>{index + 1}</div>
                   <div className='data-table-column'>
                     <div className='data-table-text'>{item.locator}</div>
                   </div>
@@ -66,14 +62,14 @@ const AppointmentTable: React.FC<AppointmentTable> = ({ appointments = [] }) => 
               </div>
             </DataSingle>
             <DataSingle>
-              <div className='data-head'>Encrypted Blob</div>
+              <div className='data-head'>Encrypted blob</div>
               <div className='data-content'>
                 <div className='data-content-text'>{selectedAppointment?.encrypted_blob}</div>
                 <CopyTextComponent text={selectedAppointment?.encrypted_blob} />
               </div>
             </DataSingle>
             <DataSingle>
-              <div className='data-head'>To Self Delay</div>
+              <div className='data-head'>to_self_delay</div>
               <div className='data-content'>
                 <div className='data-content-text'>{selectedAppointment?.to_self_delay}</div>
               </div>

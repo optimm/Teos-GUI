@@ -37,20 +37,16 @@ const AllUsersComponent: React.FC = () => {
             <AllUsersContainer>
               <UserIdsTable>
                 <DataTable>
-                  <div className='data-table-title'>User Id's</div>
+                  <div className='data-table-title'>User ID's</div>
                   <div className='data-table-divider' />
                   <DataTableData columns={1}>
                     <div className='data-table-row'>
-                      <div className='data-table-serial-no'>
-                        <div className='data-table-column-head'>Sr No.</div>
-                      </div>
                       <div className='data-table-column'>
-                        <div className='data-table-column-head'>User Id</div>
+                        <div className='data-table-column-head'>ID</div>
                       </div>
                     </div>
                     {userIds?.map((item, index) => (
                       <div className='data-table-row' key={index}>
-                        <div className='data-table-serial-no'>{index + 1}</div>
                         <div className='data-table-column'>
                           <div className='data-table-text'>{item}</div>
                           <CopyTextComponent text={item} />

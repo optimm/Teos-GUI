@@ -4,6 +4,7 @@ import { CardError, CopyTextComponent, DataTable, DataTableData, PageCardLoader 
 import { TowerInfoDto } from '@common/dto';
 import { ApiService } from '@common/service/api.service';
 import { ApiUtil } from '@common/utils';
+import Icons from '@assets/icons';
 
 const TowerInfoComponent: React.FC = () => {
   const [towerInfo, setTowerInfo] = useState<TowerInfoDto | null>(null);
@@ -39,34 +40,38 @@ const TowerInfoComponent: React.FC = () => {
             <>
               <TowerInfoContainer>
                 <ItemSingle>
-                  <div className='item-title'>Tower Id</div>
+                  <div className='item-title'>Tower ID</div>
                   <div className='item-right'>
                     <div className='item-value'>{towerInfo?.tower_id}</div>
                     <CopyTextComponent text={towerInfo?.tower_id} />
                   </div>
                 </ItemSingle>
                 <ItemSingle>
-                  <div className='item-title'>Registered Users</div>
+                  <div className='item-title'>Registered users</div>
                   <div className='item-right'>
                     <div className='item-value'>{towerInfo?.n_registered_users}</div>
                   </div>
                 </ItemSingle>
                 <ItemSingle>
-                  <div className='item-title'>Watcher Appointments</div>
+                  <div className='item-title'>Watcher appointments</div>
                   <div className='item-right'>
                     <div className='item-value'>{towerInfo?.n_watcher_appointments}</div>
                   </div>
                 </ItemSingle>
                 <ItemSingle>
-                  <div className='item-title'>Responder Trackers</div>
+                  <div className='item-title'>Responder trackers</div>
                   <div className='item-right'>
                     <div className='item-value'>{towerInfo?.n_responder_trackers}</div>
                   </div>
                 </ItemSingle>
                 <ItemSingle>
-                  <div className='item-title'>Bitcoind Reachable</div>
+                  <div className='item-title'>Bitcoind reachable</div>
                   <div className='item-right'>
-                    <div className='item-value'>{towerInfo?.bitcoind_reachable.toString()}</div>
+                    <img
+                      src={towerInfo?.bitcoind_reachable ? Icons.TickIcon : Icons.CrossIcon}
+                      alt='bitcoind reachable'
+                      className='bitcoin-reachable-icon'
+                    />
                   </div>
                 </ItemSingle>
               </TowerInfoContainer>
