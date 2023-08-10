@@ -39,6 +39,7 @@ To bridge this gap and enhance the user experience this GUI is developed
 ### Testing
 
 - The unit tests have been completed and to run them `npm run test:unit` in the backend folder
+- The E2E tests have been completed and to run them `npm run test:e2e` in the backend folder
 
 ### Endpoints on the backend
 
