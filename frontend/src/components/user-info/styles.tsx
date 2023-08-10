@@ -22,7 +22,7 @@ export const NoSearchState = styled('div')({
   alignItems: 'center',
   ['& .no-search-icon']: {
     marginTop: '50px',
-    height: '110px'
+    height: '80px'
   }
 });
 export const UserDataContainer = styled('div')({
