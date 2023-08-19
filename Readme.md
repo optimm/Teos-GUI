@@ -1,6 +1,6 @@
 # Teosd GUI
 
-Welcome to Teosd GUI (Graphical User Interface) designed to complement the existing Teos-CLI (Command-Line Interface) functionality.
+Welcome to `teosd-gui` (Graphical User Interface) designed to complement the existing `teos-cli` (Command-Line Interface) functionality.
 
 While the CLI provides powerful command-based operations, Admins were faced with the task of manually interpreting the results and working with text-based outputs, making the data analysis process cumbersome and time-consuming.
 
@@ -26,15 +26,17 @@ To bridge this gap and enhance the user experience this GUI is developed
 
 ### Running
 
+- Start the project with command `npm start` in the root directory
+- To run only backend use `npm run start:backend`
+- To run only frontend use `npm run start:frontend`
+
 #### Backend
 
-- Start the server in development `npm run start:dev` in the backend folder
-- The server will start at Port `5000` , if u want to change the port change in the env file
+- The server will start at Port `5000` , if u want to change the port change in the env file in the backend folder
 
 #### Frontend
 
-- Start the server in development `npm run dev` in the frontend folder
-- The server will start at Port `3000` , if you want to change the port change in the `vite.config.ts` file
+- The server will start at Port `3000` , if you want to change the port change in the `vite.config.ts` file in the frontend folder
 
 ### Testing
 
@@ -54,3 +56,5 @@ Base url = `http://localhost:5000/api/v1/cli` , change the port number if requir
 - GET `/appointments` - Will get all the appointments in the tower
 
 - GET `/appointments/:locator` - Will get the appointments with the given locator
+
+- GET `/stop-tower` - Will shut down the tower
