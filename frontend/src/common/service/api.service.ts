@@ -2,11 +2,15 @@ import {
   GetAllUsersResDto,
   GetAppointmentsResDto,
   GetTowerInfoResDto,
-  GetUserInfoResDto
+  GetUserInfoResDto,
+  MessageResDto
 } from 'common/dto';
 import { httpClient } from 'common/http-client/http-client';
 
 export class ApiService {
+  public static async stopTower() {
+    return httpClient.get<MessageResDto>(`/cli/stop-tower`);
+  }
   public static async getTowerInfo() {
     return httpClient.get<GetTowerInfoResDto>(`/cli/tower-info`);
   }

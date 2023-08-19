@@ -9,7 +9,10 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <SnackbarProvider anchorOrigin={{ horizontal: 'right', vertical: 'top' }}>
+        <SnackbarProvider
+          anchorOrigin={{ horizontal: 'right', vertical: 'top' }}
+          autoHideDuration={2000}
+        >
           <Routes />
         </SnackbarProvider>
       </ThemeProvider>

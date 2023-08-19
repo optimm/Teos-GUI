@@ -72,3 +72,21 @@ export const MenuItem = styled('div')(({ theme }) => ({
     color: theme.palette.text.primary
   }
 }));
+
+export const StopTowerModal = styled('div')(({ theme }) => ({
+  width: '600px',
+  padding: '20px',
+  background: theme.palette.background.paper,
+
+  ['& .modal-title']: {
+    fontSize: '22px',
+    fontWeight: '600'
+  },
+  ['& .modal-content']: {
+    marginTop: '25px',
+    fontSize: '16px',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '25px'
+  }
+}));
