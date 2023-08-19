@@ -4,4 +4,5 @@ export enum CommandTypeEnum {
   getUserInfo = 'getuser',
   getAllAppointments = 'getallappointments',
   getAppointmentsLocator = 'getappointments',
+  stopTower = 'stop',
 }

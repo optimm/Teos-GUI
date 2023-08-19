@@ -5,10 +5,17 @@ import { RunCommandDto } from '../run-command/dto/run-command.dto';
 import { GetAllUsersResDto, GetTowerInfoResDto } from './dto';
 import { GetUserInfoResDto } from './dto/users.dto';
 import { GetAppointmentsResDto } from './dto/appointment.dto';
+import { MessageResDto } from '../../common/dto';
 
 @Injectable()
 export class TowerCliService {
   constructor(private runCommandService: RunCommandService) {}
+
+  async stopTower(): Promise<MessageResDto> {
+    const commandToRun = RunCommandDto.getCommand(CommandTypeEnum.stopTower);
+    const result = await this.runCommandService.runCommand(commandToRun);
+    return { message: result };
+  }
 
   async getTowerInfo(): Promise<GetTowerInfoResDto> {
     const commandToRun = RunCommandDto.getCommand(CommandTypeEnum.getTowerInfo);

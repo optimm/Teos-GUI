@@ -3,10 +3,16 @@ import { TowerCliService } from './tower-cli.service';
 import { GetAllUsersResDto, GetTowerInfoResDto } from './dto';
 import { GetUserInfoResDto } from './dto/users.dto';
 import { GetAppointmentsResDto } from './dto/appointment.dto';
+import { MessageResDto } from '../../common/dto';
 
 @Controller('cli')
 export class TowerCliController {
   constructor(private towerCliService: TowerCliService) {}
+
+  @Get('stop-tower')
+  stopTower(): Promise<MessageResDto> {
+    return this.towerCliService.stopTower();
+  }
 
   @Get('tower-info')
   getTowerInfo(): Promise<GetTowerInfoResDto> {
