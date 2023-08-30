@@ -42,7 +42,7 @@ const AllUsersComponent: React.FC = () => {
             <AllUsersContainer>
               <UserIdsTable>
                 <DataTable>
-                  <div className='data-table-title'>User ID's</div>
+                  <div className='data-table-title'>User IDs</div>
                   <div className='data-table-divider' />
                   <DataTableData columns={1}>
                     <div className='data-table-row'>
