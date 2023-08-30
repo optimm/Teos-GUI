@@ -86,22 +86,28 @@ const UserInfoComponent: React.FC = () => {
                   <div className='appointment-table'>
                     <DataTable>
                       <div className='data-table-title'>Appointments</div>
-                      <div className='data-table-divider' />
-                      <DataTableData columns={1}>
-                        <div className='data-table-row'>
-                          <div className='data-table-column'>
-                            <div className='data-table-column-head'>Appointment ID</div>
-                          </div>
-                        </div>
-                        {userData?.appointments?.map((item, index) => (
-                          <div className='data-table-row' key={index}>
-                            <div className='data-table-column'>
-                              <div className='data-table-text'>{item}</div>
-                              <CopyTextComponent text={item} />
+                      {userData?.appointments?.length > 0 ? (
+                        <>
+                          <div className='data-table-divider' />
+                          <DataTableData columns={1}>
+                            <div className='data-table-row'>
+                              <div className='data-table-column'>
+                                <div className='data-table-column-head'>Appointment ID</div>
+                              </div>
                             </div>
-                          </div>
-                        ))}
-                      </DataTableData>
+                            {userData?.appointments?.map((item, index) => (
+                              <div className='data-table-row' key={index}>
+                                <div className='data-table-column'>
+                                  <div className='data-table-text'>{item}</div>
+                                  <CopyTextComponent text={item} />
+                                </div>
+                              </div>
+                            ))}
+                          </DataTableData>
+                        </>
+                      ) : (
+                        <div className='data-table-error'>No appointments found</div>
+                      )}
                     </DataTable>
                   </div>
                 </UserDataContainer>

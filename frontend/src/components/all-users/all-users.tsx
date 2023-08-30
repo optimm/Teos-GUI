@@ -13,7 +13,12 @@ const AllUsersComponent: React.FC = () => {
     async function getInfo() {
       try {
         const { data } = await ApiService.getAllUsers();
-        setUserIds(data.user_ids);
+
+        if (data.user_ids && data.user_ids.length > 0) {
+          setUserIds(data.user_ids);
+        } else {
+          setError('No user found');
+        }
       } catch (error) {
         const errorMessage = ApiUtil.getErrorMsg(error);
         setError(errorMessage);

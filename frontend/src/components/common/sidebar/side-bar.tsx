@@ -54,7 +54,6 @@ const SideBar: React.FC = () => {
 
   return (
     <>
-      {' '}
       <SideBarContainer>
         <LogoContainer>
           <img className='logo-image' src={MainLogo} alt='Eye of satoshi' />
@@ -101,7 +100,7 @@ const SideBar: React.FC = () => {
             </MenuItem>
 
             <MenuItem onClick={() => setModalOpen(true)}>
-              <div className='menu-item-text'>Shutdown Tower</div>
+              <div className='menu-item-text'>Shutdown tower</div>
             </MenuItem>
           </div>
         </MainMenuContainer>

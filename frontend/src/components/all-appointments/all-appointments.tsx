@@ -14,7 +14,12 @@ const AllAppointmentsComponent: React.FC = () => {
     async function getAppointments() {
       try {
         const { data } = await ApiService.getAllAppointments();
-        setAppointments(data.appointments);
+
+        if (data.appointments && data.appointments.length > 0) {
+          setAppointments(data.appointments);
+        } else {
+          setError('No appointments found');
+        }
       } catch (error) {
         const errorMessage = ApiUtil.getErrorMsg(error);
         setError(errorMessage);

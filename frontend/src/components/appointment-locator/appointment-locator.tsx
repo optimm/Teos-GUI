@@ -21,7 +21,11 @@ const AppointmentLocatorComponent = () => {
 
     try {
       const { data } = await ApiService.getAppointmentsLocator(locator!);
-      setAppointments(data.appointments);
+      if (data.appointments && data.appointments.length > 0) {
+        setAppointments(data.appointments);
+      } else {
+        setError('No appointments found');
+      }
     } catch (error) {
       const errorMessage = ApiUtil.getErrorMsg(error);
       setError(errorMessage);

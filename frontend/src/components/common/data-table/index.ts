@@ -16,6 +16,11 @@ export const DataTable = styled('div')(({ theme }) => ({
     height: '1px',
     width: '100%',
     background: theme.palette.divider
+  },
+
+  ['& .data-table-error']: {
+    fontSize: '16px',
+    color: theme.palette.error.main
   }
 }));
 
