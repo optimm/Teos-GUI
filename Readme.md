@@ -14,14 +14,18 @@ To bridge this gap and enhance the user experience this GUI is developed
 
 ### Installation
 
+#### Project Directory
+
+- Install dependencies : run `npm run install:all` to install all the dependencies for backend, frontend and the project directory.
+
+- You can also find the scripts for separate installations in the `package.json` file in the root directory
+
 #### Backend
 
-- Move to the backend folder and install the dependencies `cd backend` & `npm install`
 - create a `.env` file in the backend folder and copy content from `.env.example`
 
 #### Frontend
 
-- Move to the backend folder and install the dependencies `cd frontend` & `npm install`
 - create a `.env` file in the env directory in frontend folder and copy content from `.env.example`
 
 ### Running
